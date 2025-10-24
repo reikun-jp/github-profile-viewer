@@ -6,5 +6,32 @@
     <title>GitHubプロフィールビューア</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="app-container">
+      <h1>GitHubユーザー検索</h1>
+      <div class="search-area">
+        <input
+          type="text"
+          id="username-input"
+          placeholder="Githubのユーザー名を入力"
+        />
+        <button id="search-btn">検索</button>
+      </div>
+
+      <div id="profile-container" class="hide">
+        <div class="profile-header">
+          <img src="" alt="ユーザーアバター" id="avatar" />
+          <h2 id="name"></h2>
+        </div>
+        <p id="bio"></p>
+        <div class="stats">
+          <p>フォロワー：<span id="followers"></span></p>
+          <p>リポジトリ；<span id="repos"></span></p>
+        </div>
+        <a href="#" id="profile-link" target="_blank">プロフィールを見る</a>
+      </div>
+      <p id="error-message" class="hide-message"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
